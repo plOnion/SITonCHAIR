@@ -1,0 +1,13 @@
+//modules
+@import "modules/reset.scss";
+@import "modules/fonts.scss";
+@import "modules/colors.scss";
+@import "modules/mixins.scss";
+//Partials
+@import "partials/base.scss";
+@import "partials/header.scss";
+@import "partials/slider.scss";
+@import "partials/product";
+@import "partials/priceList";
+@import "partials/contactForm";
+@import "partials/footer.scss";

@@ -1,0 +1,218 @@
+/*section priceList*/
+
+
+.priceList {
+  background: #f1f1f1;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-sizing: border-box;
+    @include tablet{
+      width: 100%;
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      justify-content: space-between;
+      padding-top: 0;
+    }
+  }
+
+.priceList_header{
+  width: 100%;
+  padding: 30px 0;
+}
+
+.pricePlans{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @include tablet{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+  }
+}
+
+.pricePlan {
+  width: 100%;
+  border: 3px solid #d6d5d5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: $color-background;
+  margin-bottom: 70px;
+  @include tablet{
+    width: 30%;
+  }
+}
+
+.pricePlan:nth-of-type(2) {
+  border: 3px solid $color-MAIN;
+  background: $color-MAIN;
+}
+
+.pricePlanPrice {
+  border: 1px solid #d6d5d5;
+  border-radius: 50%;
+  background: $color-background;
+  padding: 20px;
+  margin: 20px 0;
+  width: 110px;
+  height: 110px;
+  position: relative;
+  left: calc(50% - 64px);
+}
+
+.pricePlan:nth-of-type(2) .pricePlanPrice {
+  border: 1px solid $color-MAIN;
+}
+
+.pricePlanPrice p:first-of-type {
+  font-size: 45px;
+  font-weight: bold;
+  color: #d6d5d5;
+  position: relative;
+  top: 5px;
+}
+
+.pricePlan:nth-of-type(2) p:first-of-type {
+  color: $color-MAIN;
+}
+
+.pricePlanPrice p:first-of-type sup {
+  font-size: 16px;
+}
+
+.pricePlan:nth-of-type(2) p:first-of-type sup {
+  color: $color-MAIN;
+}
+
+.pricePlanPrice p:last-of-type {
+  font-size: $font-small;
+  font-weight: bold;
+  color: #d6d5d5;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.pricePlan:nth-of-type(2) p:last-of-type {
+  color: $color-MAIN;
+}
+
+.pricePlanItem1, .pricePlanItem3 {
+  width: 100%;
+  background-color: #e4e4e4;
+  color: #939393;
+  font-size: $font-medium;
+  text-align: center;
+  line-height: 42px;
+}
+
+.pricePlanItem2, .pricePlanItem4 {
+  width: 100%;
+  background-color: #f1f1f1;
+  color: #939393;
+  font-size: $font-medium;
+  text-align: center;
+  line-height: 42px;
+}
+
+.pricePlan:nth-of-type(2) .pricePlanItem1, .pricePlan:nth-of-type(2) .pricePlanItem3 {
+  background-color: $color-background;
+}
+
+.priceButton{
+  position: relative;
+  top: 12px;
+  background: $color-MAIN;
+  height: auto;
+  width: 85%;
+  padding: 10px 5px;
+  margin: auto auto 20px auto;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px;
+  font-size: $font-medium;
+  cursor: pointer;
+  @include tablet{
+    width: 70%;
+  }
+  a {
+    color: $color-secondaryFont;
+    text-decoration: none;
+  }
+}
+
+.pricePlan:nth-of-type(2) .priceButton {
+  background-color: $color-background;
+}
+
+.pricePlan:nth-of-type(2) .priceButton a {
+  color: $color-MAIN;
+}
+
+.pricePlan h2 {
+  text-transform: uppercase;
+  color: $color-MAIN;
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pricePlan:nth-of-type(2) h2 {
+  color: $color-secondaryFont;
+}
+
+.circle {
+  border: 3px solid #d6d5d5;
+  width: 55px;
+  height: 55px;
+  border-radius: 40px;
+  top: -30px;
+  left: calc(50% - 30px);
+  position: relative;
+  background-color: $color-background;
+  &::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 40px;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+    position: absolute;
+    background-color: #d6d5d5;
+  }
+}
+
+.pricePlan:nth-of-type(2) .circle {
+  border: 3px solid $color-MAIN;
+  background-color: $color-MAIN;
+}
+
+.pricePlan:nth-of-type(2) .circle::before {
+  background-color: #f1f1f1;
+}
+
+.priceListTitle, .contactTitle, .choiceTitle, .summaryTitle {
+  border-bottom: 7px solid $color-MAIN;
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 22px;
+}

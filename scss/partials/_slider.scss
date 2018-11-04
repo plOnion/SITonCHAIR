@@ -1,0 +1,117 @@
+/*slider*/
+
+.slider {
+  background: rgba(250, 250, 250, 1);
+  background: -moz-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250, 250, 250, 1)), color-stop(51%, rgba(250, 250, 250, 1)), color-stop(100%, rgba(204, 204, 212, 1)));
+  background: -webkit-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: -o-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+  background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
+}
+
+.slider-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  @include tablet{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+  }
+}
+
+.slide{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  @include tablet{
+  flex-wrap: nowrap;
+  }
+}
+
+.sliderImg img {
+  max-width: 100%;
+}
+
+.sliderImg li {
+  display: none;
+}
+
+.sliderContent {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  margin: 0 20px 30px 20px;
+  & h2{
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+    font-size: $font-mediumPlus;
+    & span {
+      color: $color-MAIN;
+    }
+    @include desktop {
+      font-size: $font-large;
+    }
+  }
+  & p {
+    margin: 30px 0;
+    font-size: $font-desktop;
+  }
+}
+
+.sliderLeft, .sliderImg {
+  float: left;
+}
+
+.sliderLeft {
+  cursor: pointer;
+}
+
+.sliderRight {
+  float: right;
+  cursor: pointer;
+}
+
+.sliderLeft, .sliderRight {
+  color: $color-MAIN;
+  margin: 140px 0;
+  font-size: 78px;
+  display: none;
+  @include tablet{
+    display: block;
+  }
+}
+
+.sliderButton {
+  background: $color-MAIN;
+  height: auto;
+  width: 85%;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  font-size: $font-medium;
+  cursor: pointer;
+  @include tablet{
+    width: 70%;
+  }
+  & a {
+    text-decoration: none;
+    color: $color-secondaryFont;
+  }
+}

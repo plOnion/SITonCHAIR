@@ -1,0 +1,163 @@
+/*section contact*/
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: $color-background;
+}
+
+.contact-container{
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-sizing: border-box;
+  @include tablet{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  }
+
+.contactTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 7px solid $color-MAIN;
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.contactForm{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-sizing: border-box;
+  @include tablet{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: space-between;
+    padding-top: 0;
+    flex-direction: row;
+  }
+}
+
+.contactForm1 {
+  width: 100%;
+  @include tablet{
+    width: 60%;
+    max-width: 60%;
+  }
+  & input {
+    height: 2em;
+  }
+  textarea {
+    resize: none;
+    padding-top: 15px;
+  }
+}
+
+.contactForm1 input, .contactForm1 textarea {
+  font-family: 'ralewayregular';
+  padding: 10px 0 10px 20px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #8de0d2;
+  font-size: 33px;
+}
+
+.contactForm2 {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include tablet{
+    width: 35%;
+
+  }
+  img {
+    width: 80%;
+    @include tablet {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  & input {
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  label {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 19px;
+    color: #585858;
+    padding-left: 18%;
+    height: auto;
+    margin: 10% 0;
+    @include tablet{
+      margin: 0;
+    }
+  }
+}
+
+.contactForm2 label::before, .contactForm2 label::after {
+  border: 1px solid $color-MAIN;
+  content: "";
+  display: block;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: calc(50% - 19px);
+  left: 0;
+}
+
+.contactForm2 label::after {
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+  border: 0;
+  display: none;
+}
+
+.contactForm2 input:checked+label::after {
+  display: block;
+}
+
+.contactButton {
+  background: $color-MAIN;
+  height: auto;
+  width: 85%;
+  padding: 10px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $font-medium;
+  cursor: pointer;
+  @include tablet{
+    width: 70%;
+  }
+  & a {
+    text-decoration: none;
+    color: $color-secondaryFont;
+  }
+}

@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.green{
+    color: #24ba9f;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header li{
+    margin: 0 23px;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+.slider{
+    width: 100%;
+    background: #fdfdfd; /* Old browsers */
+    background: -moz-linear-gradient(top, #fdfdfd 1%, #cfced6 100%, #bcbcbc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fdfdfd 1%,#cfced6 100%,#bcbcbc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fdfdfd 1%,#cfced6 100%,#bcbcbc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#bcbcbc',GradientType=0 ); /* IE6-9 */
+    display: flex;
+    }
+
+.slider img {
+    width: 40%;
+}
+
+.slider__description{
+    width: 60%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__description h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slider__description p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #24ba9f;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #24ba9f;
+    text-decoration: none;
+}
+
+.prize__row{
+    height: 40%;
+}
+
+.cennik_row{
+    height: 10%;
+}
+
+
+.footer__left {
+    width: 60%;
+    color: gray;
+    font-size: 20px;
+}
+
+.footer__right{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 30px;
+}

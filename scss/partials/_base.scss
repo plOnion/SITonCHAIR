@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: 'ralewayregular', Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'ralewayregular';
+  src: url('../fonts/raleway-regular.woff2') format('woff2'), url('../fonts/raleway-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
